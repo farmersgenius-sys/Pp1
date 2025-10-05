@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes - Farmer Genius</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Toggle Button -->
+    <button class="nav-toggle" id="navToggle" onclick="toggleNavigation()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Farmer Genius Logo" class="logo-image">
+                <span data-en="Farmer Genius" data-hi="किसान जीनियस">Farmer Genius</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item" style="--delay: 1;"><a href="index.html" class="nav-link" data-en="Home" data-hi="होम">Home</a></li>
+                <li class="nav-item" style="--delay: 2;"><a href="tools.html" class="nav-link" data-en="Farming Tools" data-hi="कृषि उपकरण">Farming Tools</a></li>
+                <li class="nav-item" style="--delay: 3;"><a href="schemes.html" class="nav-link active" data-en="Government Schemes" data-hi="सरकारी योजनाएं">Government Schemes</a></li>
+                <li class="nav-item" style="--delay: 4;"><a href="modern-farming.html" class="nav-link" data-en="Modern Farming" data-hi="आधुनिक कृषि">Modern Farming</a></li>
+                <li class="nav-item" style="--delay: 5;"><a href="settings.html" class="nav-link" data-en="Settings" data-hi="सेटिंग्स">Settings</a></li>
+                <li class="nav-item" style="--delay: 6;"><a href="#" class="nav-link" onclick="toggleChatWidget()" data-en="AI Assistant" data-hi="AI सहायक">AI Assistant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="Government Schemes for Farmers" data-hi="किसानों के लिए सरकारी योजनाएं">Government Schemes for Farmers</h1>
+            <p class="page-subtitle" data-en="Comprehensive guide to agricultural schemes and subsidies available in India" data-hi="भारत में उपलब्ध कृषि योजनाओं और सब्सिडी की व्यापक मार्गदर्शिका">Comprehensive guide to agricultural schemes and subsidies available in India</p>
+        </div>
+    </section>
+
+    <!-- Government Schemes Section -->
+    <section class="schemes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Major Agricultural Schemes" data-hi="प्रमुख कृषि योजनाएं">Major Agricultural Schemes</h2>
+                <p class="section-description" data-en="Stay updated with the latest government schemes and subsidies to boost your farming income" data-hi="अपनी खेती की आय बढ़ाने के लिए नवीनतम सरकारी योजनाओं और सब्सिडी की जानकारी रखें">Stay updated with the latest government schemes and subsidies to boost your farming income</p>
+            </div>
+            
+            <div class="schemes-grid">
+                <!-- PM-KISAN Scheme -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3 data-en="PM-KISAN Samman Nidhi" data-hi="पीएम-किसान सम्मान निधि">PM-KISAN Samman Nidhi</h3>
+                    <p data-en="Direct income support to all landholding farmer families in the country to supplement their financial needs for agriculture and allied activities." data-hi="देश में सभी भूमिधारक किसान परिवारों को कृषि और संबद्ध गतिविधियों के लिए उनकी वित्तीय आवश्यकताओं को पूरा करने हेतु प्रत्यक्ष आय सहायता।">Direct income support to all landholding farmer families in the country to supplement their financial needs for agriculture and allied activities.</p>
+                    <div class="scheme-details">
+                        <p><strong data-en="Benefit:" data-hi="लाभ:">Benefit:</strong> <span data-en="₹6,000 per year in 3 installments" data-hi="प्रति वर्ष ₹6,000 तीन किश्तों में">₹6,000 per year in 3 installments</span></p>
+                        <p><strong data-en="Eligibility:" data-hi="पात्रता:">Eligibility:</strong> <span data-en="All landholding farmers" data-hi="सभी भूमिधारक किसान">All landholding farmers</span></p>
+                        <p><strong data-en="Apply at:" data-hi="आवेदन करें:">Apply at:</strong> <span data-en="pmkisan.gov.in" data-hi="pmkisan.gov.in">pmkisan.gov.in</span></p>
+                    </div>
+                    <div class="scheme-benefit" data-en="₹6,000 Annual" data-hi="₹6,000 वार्षिक">₹6,000 Annual</div>
+                </div>
+
+                <!-- PMFBY Scheme -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="PM Fasal Bima Yojana" data-hi="पीएम फसल बीमा योजना">PM Fasal Bima Yojana</h3>
+                    <p data-en="Comprehensive crop insurance scheme providing financial support to farmers in case of crop loss due to natural calamities, pests, and diseases." data-hi="प्राकृतिक आपदाओं, कीटों और बीमारियों के कारण फसल नुकसान की स्थिति में किसानों को वित्तीय सहायता प्रदान करने वाली व्यापक फसल बीमा योजना।">Comprehensive crop insurance scheme providing financial support to farmers in case of crop loss due to natural calamities, pests, and diseases.</p>
+                    <div class="scheme-details">
+                        <p><strong data-en="Premium:" data-hi="प्रीमियम:">Premium:</strong> <span data-en="2% for Kharif, 1.5% for Rabi" data-hi="खरीफ के लिए 2%, रबी के लिए 1.5%">2% for Kharif, 1.5% for Rabi</span></p>
+                        <p><strong data-en="Coverage:" data-hi="कवरेज:">Coverage:</strong> <span data-en="All crops and risks" data-hi="सभी फसलें और जोखिम">All crops and risks</span></p>
+                        <p><strong data-en="Apply at:" data-hi="आवेदन करें:">Apply at:</strong> <span data-en="pmfby.gov.in" data-hi="pmfby.gov.in">pmfby.gov.in</span></p>
+                    </div>
+                    <div class="scheme-benefit" data-en="Crop Insurance" data-hi="फसल बीमा">Crop Insurance</div>
+                </div>
+
+                <!-- Soil Health Card -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-en="Soil Health Card Scheme" data-hi="मृदा स्वास्थ्य कार्ड योजना">Soil Health Card Scheme</h3>
+                    <p data-en="Free soil testing and nutrient-based fertilizer recommendations to improve soil health and reduce input costs for farmers." data-hi="मिट्टी के स्वास्थ्य में सुधार और किसानों के लिए इनपुट लागत कम करने हेतु मुफ्त मिट्टी परीक्षण और पोषक तत्व आधारित उर्वरक सिफारिशें।">Free soil testing and nutrient-based fertilizer recommendations to improve soil health and reduce input costs for farmers.</p>
+                    <div class="scheme-details">
+                        <p><strong>Benefit:</strong> Free soil testing every 3 years</p>
+                        <p><strong>Covers:</strong> 12 soil parameters</p>
+                        <p><strong>Apply at:</strong> Local agriculture office</p>
+                    </div>
+                    <div class="scheme-benefit">Free Testing</div>
+                </div>
+
+                <!-- KCC Loan -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Kisan Credit Card (KCC)</h3>
+                    <p>Flexible credit facility for farmers to meet their short-term credit requirements including crop production, post-harvest expenses, and marketing.</p>
+                    <div class="scheme-details">
+                        <p><strong>Interest Rate:</strong> 7% (4% with subsidy)</p>
+                        <p><strong>Limit:</strong> Based on land holding</p>
+                        <p><strong>Apply at:</strong> Any bank branch</p>
+                    </div>
+                    <div class="scheme-benefit">Low Interest</div>
+                </div>
+
+                <!-- PM-KUSUM -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>PM-KUSUM Yojana</h3>
+                    <p>Solar agriculture scheme providing financial support for solar pumps, grid-connected solar plants, and solar power plants on agricultural land.</p>
+                    <div class="scheme-details">
+                        <p><strong>Subsidy:</strong> Up to 60% of cost</p>
+                        <p><strong>Covers:</strong> Solar pumps and plants</p>
+                        <p><strong>Apply at:</strong> State electricity boards</p>
+                    </div>
+                    <div class="scheme-benefit">Solar Power</div>
+                </div>
+
+                <!-- National Agriculture Market -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-market"></i>
+                    </div>
+                    <h3>e-NAM (National Agriculture Market)</h3>
+                    <p>Online marketing platform for agricultural commodities allowing farmers to sell their produce directly to buyers at better prices.</p>
+                    <div class="scheme-details">
+                        <p><strong>Benefit:</strong> Better price discovery</p>
+                        <p><strong>Access:</strong> 1000+ mandis</p>
+                        <p><strong>Apply at:</strong> enam.gov.in</p>
+                    </div>
+                    <div class="scheme-benefit">Online Market</div>
+                </div>
+
+                <!-- Micro Irrigation -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Micro Irrigation Scheme</h3>
+                    <p>Financial assistance for installation of drip and sprinkler irrigation systems to improve water use efficiency and increase productivity.</p>
+                    <div class="scheme-details">
+                        <p><strong>Subsidy:</strong> 55% for general farmers</p>
+                        <p><strong>Additional:</strong> 20% for SC/ST farmers</p>
+                        <p><strong>Apply at:</strong> District agriculture office</p>
+                    </div>
+                    <div class="scheme-benefit">Water Saving</div>
+                </div>
+
+                <!-- Farm Mechanization -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3>Sub-Mission on Agricultural Mechanization</h3>
+                    <p>Financial assistance for purchase of agricultural machinery and equipment to promote farm mechanization and reduce drudgery.</p>
+                    <div class="scheme-details">
+                        <p><strong>Subsidy:</strong> 40-50% of cost</p>
+                        <p><strong>Covers:</strong> Tractors, harvesters, etc.</p>
+                        <p><strong>Apply at:</strong> District collector office</p>
+                    </div>
+                    <div class="scheme-benefit">Equipment Subsidy</div>
+                </div>
+
+                <!-- Organic Farming -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Paramparagat Krishi Vikas Yojana</h3>
+                    <p>Promotes organic farming by providing financial assistance for organic inputs, certification, and marketing support for organic produce.</p>
+                    <div class="scheme-details">
+                        <p><strong>Support:</strong> ₹50,000 per hectare</p>
+                        <p><strong>Duration:</strong> 3 years</p>
+                        <p><strong>Apply at:</strong> Agriculture department</p>
+                    </div>
+                    <div class="scheme-benefit">Organic Support</div>
+                </div>
+
+                <!-- Animal Husbandry -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-cow"></i>
+                    </div>
+                    <h3>National Livestock Mission</h3>
+                    <p>Comprehensive scheme for development of livestock sector providing support for animal healthcare, breeding, and dairy development.</p>
+                    <div class="scheme-details">
+                        <p><strong>Support:</strong> 50% of project cost</p>
+                        <p><strong>Covers:</strong> Cattle, buffalo, goat farming</p>
+                        <p><strong>Apply at:</strong> Animal husbandry department</p>
+                    </div>
+                    <div class="scheme-benefit">Livestock Support</div>
+                </div>
+
+                <!-- Horticulture Mission -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Mission for Integrated Development of Horticulture</h3>
+                    <p>Comprehensive development of horticulture sector covering fruits, vegetables, flowers, spices, and plantation crops.</p>
+                    <div class="scheme-details">
+                        <p><strong>Support:</strong> Up to 40% of cost</p>
+                        <p><strong>Covers:</strong> All horticultural activities</p>
+                        <p><strong>Apply at:</strong> Horticulture department</p>
+                    </div>
+                    <div class="scheme-benefit">Horticulture</div>
+                </div>
+
+                <!-- Storage Infrastructure -->
+                <div class="scheme-card">
+                    <div class="scheme-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Gramin Bhandaran Yojana</h3>
+                    <p>Financial assistance for construction of rural godowns and storage infrastructure to reduce post-harvest losses and improve farmers' income.</p>
+                    <div class="scheme-details">
+                        <p><strong>Subsidy:</strong> 25% of project cost</p>
+                        <p><strong>Capacity:</strong> 100-30,000 tonnes</p>
+                        <p><strong>Apply at:</strong> NABARD offices</p>
+                    </div>
+                    <div class="scheme-benefit">Storage Support</div>
+                </div>
+            </div>
+
+            <!-- Application Process Section -->
+            <div class="application-process">
+                <h3 class="process-title">How to Apply for Government Schemes</h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Check Eligibility</h4>
+                        <p>Review scheme requirements and ensure you meet all eligibility criteria before applying.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Gather Documents</h4>
+                        <p>Collect required documents like Aadhaar, land records, bank details, and farming certificates.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Submit Application</h4>
+                        <p>Apply online through respective portals or visit nearest Common Service Center (CSC).</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Track Status</h4>
+                        <p>Monitor your application status online and follow up for any additional requirements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Help Section -->
+            <div class="help-section">
+                <h3>Need Help?</h3>
+                <div class="help-content">
+                    <div class="help-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Toll-Free Number</h4>
+                            <p>1800-180-1551 (PM-KISAN Helpline)</p>
+                        </div>
+                    </div>
+                    <div class="help-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Local Office</h4>
+                            <p>Visit your nearest agriculture extension office</p>
+                        </div>
+                    </div>
+                    <div class="help-item">
+                        <i class="fas fa-laptop"></i>
+                        <div>
+                            <h4>CSC Centers</h4>
+                            <p>Apply through Common Service Centers in your village</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Farmer Genius Logo" class="logo-image">
+                        <span>Farmer Genius</span>
+                    </div>
+                    <p>Smart solutions for modern farming. Empowering farmers with technology and knowledge.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tools.html">Farming Tools</a></li>
+                        <li><a href="schemes.html">Government Schemes</a></li>
+                        <li><a href="modern-farming.html">Modern Farming</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@farmergenius.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Farmer Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-robot"></i>
+                <span>Farm AI Assistant</span>
+            </div>
+            <button class="chat-close" onclick="toggleChatWidget()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm your AI farming assistant. Ask me about government schemes, eligibility criteria, or any farming questions!</p>
+                    <div class="quick-questions">
+                        <button class="quick-btn" onclick="askQuickQuestion('How to apply for PM-KISAN?')">PM-KISAN Application?</button>
+                        <button class="quick-btn" onclick="askQuickQuestion('What is crop insurance?')">Crop Insurance Info?</button>
+                        <button class="quick-btn" onclick="askQuickQuestion('Organic farming subsidies?')">Organic Subsidies?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Ask about government schemes..." maxlength="200">
+            <button class="chat-send" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <div id="chat-button" class="chat-floating-btn" onclick="toggleChatWidget()">
+        <i class="fas fa-comments"></i>
+        <div class="chat-notification">Ask AI</div>
+        <div class="chat-pulse"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

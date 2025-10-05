@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Farming Worldwide - Farmer Genius</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Toggle Button -->
+    <button class="nav-toggle" id="navToggle" onclick="toggleNavigation()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Farmer Genius Logo" class="logo-image">
+                <span data-en="Farmer Genius" data-hi="किसान जीनियस">Farmer Genius</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item" style="--delay: 1;"><a href="index.html" class="nav-link" data-en="Home" data-hi="होम">Home</a></li>
+                <li class="nav-item" style="--delay: 2;"><a href="tools.html" class="nav-link" data-en="Farming Tools" data-hi="कृषि उपकरण">Farming Tools</a></li>
+                <li class="nav-item" style="--delay: 3;"><a href="schemes.html" class="nav-link" data-en="Government Schemes" data-hi="सरकारी योजनाएं">Government Schemes</a></li>
+                <li class="nav-item" style="--delay: 4;"><a href="modern-farming.html" class="nav-link active" data-en="Modern Farming" data-hi="आधुनिक कृषि">Modern Farming</a></li>
+                <li class="nav-item" style="--delay: 5;"><a href="settings.html" class="nav-link" data-en="Settings" data-hi="सेटिंग्स">Settings</a></li>
+                <li class="nav-item" style="--delay: 6;"><a href="#" class="nav-link" onclick="toggleChatWidget()" data-en="AI Assistant" data-hi="AI सहायक">AI Assistant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="Modern Farming Worldwide" data-hi="विश्वभर में आधुनिक खेती">Modern Farming Worldwide</h1>
+            <p class="page-subtitle" data-en="Global agricultural innovations and techniques adapted for Indian farming conditions" data-hi="भारतीय खेती के लिए अनुकूलित वैश्विक कृषि नवाचार और तकनीकें">Global agricultural innovations and techniques adapted for Indian farming conditions</p>
+        </div>
+    </section>
+
+    <!-- Modern Techniques Section -->
+    <section class="techniques-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Advanced Farming Techniques" data-hi="उन्नत खेती तकनीकें">Advanced Farming Techniques</h2>
+                <p class="section-description" data-en="Learn cutting-edge agricultural practices from around the world, customized for Indian farmers" data-hi="भारतीय किसानों के लिए अनुकूलित दुनिया भर की अत्याधुनिक कृषि प्रथाओं को सीखें">Learn cutting-edge agricultural practices from around the world, customized for Indian farmers</p>
+            </div>
+            
+            <div class="techniques-grid">
+                <!-- Precision Agriculture -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3 data-en="Precision Agriculture" data-hi="सटीक कृषि">Precision Agriculture</h3>
+                        <div class="origin-badge" data-en="🇺🇸 USA / 🇳🇱 Netherlands" data-hi="🇺🇸 अमेरिका / 🇳🇱 नीदरलैंड">🇺🇸 USA / 🇳🇱 Netherlands</div>
+                        <p class="technique-description" data-en="GPS-guided farming using satellite imagery and sensors to optimize field-level management of crops." data-hi="फसलों के क्षेत्र-स्तरीय प्रबंधन को अनुकूलित करने के लिए उपग्रह छवियों और सेंसर का उपयोग करते हुए GPS-निर्देशित खेती।">GPS-guided farming using satellite imagery and sensors to optimize field-level management of crops.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Use affordable smartphone apps like <strong>CropIn</strong> and <strong>FarmLogs</strong></li>
+                                <li>Adopt <strong>drone services</strong> available through government schemes (₹50-100/acre)</li>
+                                <li>Partner with local cooperatives for shared GPS equipment</li>
+                                <li>Start with basic soil testing and variable rate fertilizer application</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• 15-20% reduction in fertilizer costs • 10-15% increase in yield • Better water management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vertical Farming -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Vertical & Hydroponic Farming</h3>
+                        <div class="origin-badge">🇯🇵 Japan / 🇸🇬 Singapore</div>
+                        <p class="technique-description">Growing crops in vertically stacked layers using nutrient solutions instead of soil.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Start with <strong>leafy vegetables</strong> (spinach, lettuce, herbs) in small setups</li>
+                                <li>Use locally available PVC pipes and simple pump systems</li>
+                                <li>Perfect for urban areas and small landholders</li>
+                                <li>Government subsidy available under <strong>MIDH scheme</strong> (up to 40%)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• 95% less water usage • Year-round production • Higher price for premium vegetables</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conservation Agriculture -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Conservation Agriculture</h3>
+                        <div class="origin-badge">🇧🇷 Brazil / 🇦🇷 Argentina</div>
+                        <p class="technique-description">Sustainable farming based on three principles: minimal soil disturbance, permanent soil cover, and crop rotation.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Adopt <strong>Zero Till</strong> / <strong>No-Till</strong> farming practices</li>
+                                <li>Use crop residue as mulch instead of burning</li>
+                                <li>Rotate crops: Rice-Wheat with legumes like chickpea</li>
+                                <li>Access machinery through Custom Hiring Centers (CHCs)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• 30-40% reduction in cultivation costs • Improved soil health • Reduced pollution</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Irrigation -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Smart Irrigation Systems</h3>
+                        <div class="origin-badge">🇮🇱 Israel / 🇦🇺 Australia</div>
+                        <p class="technique-description">Automated irrigation systems using soil moisture sensors and weather data to optimize water usage.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Start with simple <strong>tensiometer-based systems</strong></li>
+                                <li>Use <strong>IoT sensors</strong> through government's Digital India Agriculture initiatives</li>
+                                <li>Combine with drip irrigation (55% subsidy available)</li>
+                                <li>Mobile app integration for remote monitoring</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• 40-50% water savings • 20-25% yield increase • Reduced labor costs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrated Pest Management -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Integrated Pest Management (IPM)</h3>
+                        <div class="origin-badge">🇺🇸 USA / 🇪🇺 Europe</div>
+                        <p class="technique-description">Ecosystem-based approach combining biological, cultural, and chemical controls to manage pests sustainably.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Use local beneficial insects and <strong>bio-pesticides</strong></li>
+                                <li>Install <strong>pheromone traps</strong> and light traps</li>
+                                <li>Practice companion planting (marigold with tomatoes)</li>
+                                <li>Access <strong>bio-control agents</strong> from KVKs and state agriculture departments</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• 60-70% reduction in pesticide use • Healthier crops • Premium prices for residue-free produce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Climate-Smart Agriculture -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Climate-Smart Agriculture</h3>
+                        <div class="origin-badge">🇰🇪 Kenya / 🇲🇽 Mexico</div>
+                        <p class="technique-description">Agricultural practices that sustainably increase productivity while adapting to climate change.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Adopt <strong>drought-resistant varieties</strong> from ICAR institutes</li>
+                                <li>Use weather forecast apps like <strong>Meghdoot</strong> and <strong>Damini</strong></li>
+                                <li>Practice <strong>rainwater harvesting</strong> and farm pond construction</li>
+                                <li>Diversify crops based on local climate patterns</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• Climate resilience • Risk reduction • Stable income despite weather variations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agri-Tech Integration -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Digital Agriculture & AgriTech</h3>
+                        <div class="origin-badge">🇰🇷 South Korea / 🇩🇰 Denmark</div>
+                        <p class="technique-description">Using mobile apps, AI, and IoT devices for farm management, market access, and decision support.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Use <strong>Kisan Suvidha</strong> app for weather, prices, and advisory</li>
+                                <li>Access <strong>e-NAM platform</strong> for better market prices</li>
+                                <li>Use <strong>Crop Doctor</strong> apps for disease identification</li>
+                                <li>Leverage <strong>PM-KISAN</strong> and <strong>DBT</strong> systems for subsidies</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• Better market access • Real-time information • Reduced middleman dependency</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controlled Environment Agriculture -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Controlled Environment Agriculture</h3>
+                        <div class="origin-badge">🇳🇱 Netherlands / 🇨🇦 Canada</div>
+                        <p class="technique-description">Growing crops in greenhouses and polyhouses with controlled temperature, humidity, and lighting.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Start with low-cost <strong>polyhouses</strong> (₹800-1200/sq.m)</li>
+                                <li>Grow high-value crops like <strong>bell peppers, cucumbers, tomatoes</strong></li>
+                                <li>Access 50% subsidy under <strong>MIDH scheme</strong></li>
+                                <li>Use natural ventilation instead of expensive climate control</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• 3-4x higher yields • Protection from weather • Premium market prices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aquaponics -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Aquaponics & Integrated Farming</h3>
+                        <div class="origin-badge">🇦🇺 Australia / 🇹🇭 Thailand</div>
+                        <p class="technique-description">Combining aquaculture (fish farming) with hydroponics (soilless plant cultivation) in a symbiotic system.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Use local fish species like <strong>Rohu, Catla, Tilapia</strong></li>
+                                <li>Combine with traditional crops like <strong>rice-fish</strong> systems</li>
+                                <li>Start small with 100-200 sq.ft systems</li>
+                                <li>Access training through <strong>fisheries departments</strong> and KVKs</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• Dual income from fish and vegetables • Efficient water usage • Year-round production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regenerative Agriculture -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Regenerative Agriculture</h3>
+                        <div class="origin-badge">🇺🇸 USA / 🇦🇷 Argentina</div>
+                        <p class="technique-description">Farming practices focused on rebuilding soil health, increasing biodiversity, and capturing carbon.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Practice <strong>multi-cropping</strong> and <strong>agroforestry</strong></li>
+                                <li>Use organic inputs and <strong>jeevamrut</strong> preparations</li>
+                                <li>Integrate livestock with crop production</li>
+                                <li>Access support through <strong>PKVY</strong> and organic farming schemes</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• Improved soil fertility • Carbon credit opportunities • Sustainable long-term farming</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blockchain & Supply Chain -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Blockchain in Agriculture</h3>
+                        <div class="origin-badge">🇪🇸 Spain / 🇨🇭 Switzerland</div>
+                        <p class="technique-description">Using blockchain technology for supply chain transparency, traceability, and fair pricing.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Start with <strong>QR code-based</strong> simple traceability systems</li>
+                                <li>Join <strong>FPO cooperatives</strong> for collective blockchain adoption</li>
+                                <li>Use platforms like <strong>AgriChain</strong> for supply chain management</li>
+                                <li>Focus on export-oriented and premium crops initially</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• Better price realization • Direct market access • Building consumer trust</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robotics & Automation -->
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="technique-content">
+                        <h3>Agricultural Robotics</h3>
+                        <div class="origin-badge">🇯🇵 Japan / 🇩🇪 Germany</div>
+                        <p class="technique-description">Automated machines for seeding, weeding, harvesting, and crop monitoring to reduce labor dependency.</p>
+                        
+                        <div class="indian-adaptation">
+                            <h4 data-en="🇮🇳 Indian Adaptation:" data-hi="🇮🇳 भारतीय अनुकूलन:">🇮🇳 Indian Adaptation:</h4>
+                            <ul>
+                                <li>Start with semi-automated tools like <strong>power weeders</strong></li>
+                                <li>Use <strong>drone spraying services</strong> available in many districts</li>
+                                <li>Access machinery through <strong>Custom Hiring Centers</strong></li>
+                                <li>Focus on labor-intensive operations first (weeding, harvesting)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="benefits">
+                            <h4>Benefits for Indian Farmers:</h4>
+                            <p>• Reduced labor costs • Precision in operations • Timely farm activities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Implementation Guide -->
+            <div class="implementation-guide">
+                <h3 class="guide-title">How to Start Your Modern Farming Journey</h3>
+                <div class="implementation-steps">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Start Small</h4>
+                        <p>Begin with one technique on a small plot (0.25-0.5 acres) to test and learn before scaling up.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Get Training</h4>
+                        <p>Attend training programs at KVKs, agriculture universities, and farmer producer organizations.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Form Groups</h4>
+                        <p>Join or form farmer groups to share costs, knowledge, and access government schemes collectively.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Monitor & Scale</h4>
+                        <p>Track results, calculate returns, and gradually expand successful techniques to larger areas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div class="success-stories">
+                <h3>Success Stories from Indian Farmers</h3>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <h4>🏆 Ramesh Kumar, Punjab</h4>
+                        <p><strong>Precision Agriculture:</strong> Reduced fertilizer costs by 25% and increased wheat yield by 15% using GPS-guided variable rate application.</p>
+                    </div>
+                    <div class="story-card">
+                        <h4>🏆 Sunita Devi, Maharashtra</h4>
+                        <p><strong>Drip Irrigation:</strong> Saved 40% water and doubled onion yield, earning ₹3 lakh additional income per acre.</p>
+                    </div>
+                    <div class="story-card">
+                        <h4>🏆 Mohan Patel, Gujarat</h4>
+                        <p><strong>Polyhouse Farming:</strong> Growing bell peppers year-round, earning ₹8-10 lakh per acre compared to ₹1-2 lakh in open field.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Farmer Genius Logo" class="logo-image">
+                        <span>Farmer Genius</span>
+                    </div>
+                    <p>Smart solutions for modern farming. Empowering farmers with technology and knowledge.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tools.html">Farming Tools</a></li>
+                        <li><a href="schemes.html">Government Schemes</a></li>
+                        <li><a href="modern-farming.html">Modern Farming</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@farmergenius.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Farmer Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-robot"></i>
+                <span>Farm AI Assistant</span>
+            </div>
+            <button class="chat-close" onclick="toggleChatWidget()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm your AI farming assistant. Ask me about modern farming techniques, technology adoption, or any agricultural questions!</p>
+                    <div class="quick-questions">
+                        <button class="quick-btn" onclick="askQuickQuestion('How to start precision farming?')">Precision Farming?</button>
+                        <button class="quick-btn" onclick="askQuickQuestion('Best drip irrigation setup?')">Drip Irrigation?</button>
+                        <button class="quick-btn" onclick="askQuickQuestion('Polyhouse farming costs?')">Polyhouse Costs?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Ask about modern farming..." maxlength="200">
+            <button class="chat-send" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <div id="chat-button" class="chat-floating-btn" onclick="toggleChatWidget()">
+        <i class="fas fa-comments"></i>
+        <div class="chat-notification">Ask AI</div>
+        <div class="chat-pulse"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

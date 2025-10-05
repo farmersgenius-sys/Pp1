@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Farmer Genius</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Toggle Button -->
+    <button class="nav-toggle" id="navToggle" onclick="toggleNavigation()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Farmer Genius Logo" class="logo-image">
+                <span data-en="Farmer Genius" data-hi="किसान जीनियस">Farmer Genius</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item" style="--delay: 1;"><a href="index.html" class="nav-link" data-en="Home" data-hi="होम">Home</a></li>
+                <li class="nav-item" style="--delay: 2;"><a href="tools.html" class="nav-link" data-en="Farming Tools" data-hi="कृषि उपकरण">Farming Tools</a></li>
+                <li class="nav-item" style="--delay: 3;"><a href="schemes.html" class="nav-link" data-en="Government Schemes" data-hi="सरकारी योजनाएं">Government Schemes</a></li>
+                <li class="nav-item" style="--delay: 4;"><a href="modern-farming.html" class="nav-link" data-en="Modern Farming" data-hi="आधुनिक कृषि">Modern Farming</a></li>
+                <li class="nav-item" style="--delay: 5;"><a href="settings.html" class="nav-link active" data-en="Settings" data-hi="सेटिंग्स">Settings</a></li>
+                <li class="nav-item" style="--delay: 6;"><a href="#" class="nav-link" onclick="toggleChatWidget()" data-en="AI Assistant" data-hi="AI सहायक">AI Assistant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="Settings" data-hi="सेटिंग्स">Settings</h1>
+            <p class="page-subtitle" data-en="Customize your Farmer Genius experience" data-hi="अपने किसान जीनियस अनुभव को अनुकूलित करें">Customize your Farmer Genius experience</p>
+        </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section class="settings-section">
+        <div class="container">
+            <div class="settings-grid">
+                <!-- Theme Settings -->
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="settings-content">
+                        <h3 data-en="Theme Settings" data-hi="थीम सेटिंग्स">Theme Settings</h3>
+                        <p data-en="Choose between light and dark mode for better viewing experience" data-hi="बेहतर देखने के अनुभव के लिए लाइट और डार्क मोड के बीच चुनें">Choose between light and dark mode for better viewing experience</p>
+                        
+                        <div class="theme-toggle">
+                            <div class="toggle-option">
+                                <input type="radio" id="light-mode" name="theme" value="light" checked>
+                                <label for="light-mode" class="toggle-label">
+                                    <i class="fas fa-sun"></i>
+                                    <span data-en="Light Mode" data-hi="लाइट मोड">Light Mode</span>
+                                </label>
+                            </div>
+                            <div class="toggle-option">
+                                <input type="radio" id="dark-mode" name="theme" value="dark">
+                                <label for="dark-mode" class="toggle-label">
+                                    <i class="fas fa-moon"></i>
+                                    <span data-en="Dark Mode" data-hi="डार्क मोड">Dark Mode</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language Settings -->
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="settings-content">
+                        <h3 data-en="Language Settings" data-hi="भाषा सेटिंग्स">Language Settings</h3>
+                        <p data-en="Select your preferred language for the interface" data-hi="इंटरफेस के लिए अपनी पसंदीदा भाषा चुनें">Select your preferred language for the interface</p>
+                        
+                        <div class="language-toggle">
+                            <div class="toggle-option">
+                                <input type="radio" id="english" name="language" value="en" checked>
+                                <label for="english" class="toggle-label">
+                                    <i class="fas fa-flag"></i>
+                                    <span>English</span>
+                                </label>
+                            </div>
+                            <div class="toggle-option">
+                                <input type="radio" id="hindi" name="language" value="hi">
+                                <label for="hindi" class="toggle-label">
+                                    <i class="fas fa-flag"></i>
+                                    <span>हिंदी (Hindi)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification Settings -->
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="settings-content">
+                        <h3 data-en="Notification Settings" data-hi="अधिसूचना सेटिंग्स">Notification Settings</h3>
+                        <p data-en="Manage your notification preferences" data-hi="अपनी अधिसूचना प्राथमिकताओं का प्रबंधन करें">Manage your notification preferences</p>
+                        
+                        <div class="notification-options">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="weather-alerts" checked>
+                                <label for="weather-alerts" data-en="Weather Alerts" data-hi="मौसम अलर्ट">Weather Alerts</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="scheme-updates" checked>
+                                <label for="scheme-updates" data-en="Government Scheme Updates" data-hi="सरकारी योजना अपडेट">Government Scheme Updates</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="farming-tips" checked>
+                                <label for="farming-tips" data-en="Daily Farming Tips" data-hi="दैनिक कृषि सुझाव">Daily Farming Tips</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Section -->
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="settings-content">
+                        <h3 data-en="About Farmer Genius" data-hi="किसान जीनियस के बारे में">About Farmer Genius</h3>
+                        <p data-en="Version 1.0.0 - Smart solutions for modern farmers" data-hi="संस्करण 1.0.0 - आधुनिक किसानों के लिए स्मार्ट समाधान">Version 1.0.0 - Smart solutions for modern farmers</p>
+                        
+                        <div class="about-links">
+                            <a href="#" class="about-link" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
+                            <a href="#" class="about-link" data-en="Terms of Service" data-hi="सेवा की शर्तें">Terms of Service</a>
+                            <a href="#" class="about-link" data-en="Contact Support" data-hi="सहायता संपर्क">Contact Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save Settings Button -->
+            <div class="settings-actions">
+                <button class="save-settings-btn" onclick="saveSettings()" data-en="Save Settings" data-hi="सेटिंग्स सेव करें">Save Settings</button>
+                <button class="reset-settings-btn" onclick="resetSettings()" data-en="Reset to Default" data-hi="डिफ़ॉल्ट पर रीसेट करें">Reset to Default</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Farmer Genius Logo" class="logo-image">
+                        <span data-en="Farmer Genius" data-hi="किसान जीनियस">Farmer Genius</span>
+                    </div>
+                    <p data-en="Smart solutions for modern farming. Empowering farmers with technology and knowledge." data-hi="आधुनिक कृषि के लिए स्मार्ट समाधान। प्रौद्योगिकी और ज्ञान के साथ किसानों को सशक्त बनाना।">Smart solutions for modern farming. Empowering farmers with technology and knowledge.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                        <li><a href="tools.html" data-en="Farming Tools" data-hi="कृषि उपकरण">Farming Tools</a></li>
+                        <li><a href="schemes.html" data-en="Government Schemes" data-hi="सरकारी योजनाएं">Government Schemes</a></li>
+                        <li><a href="modern-farming.html" data-en="Modern Farming" data-hi="आधुनिक कृषि">Modern Farming</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-en="Contact Info" data-hi="संपर्क जानकारी">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@farmergenius.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-en="&copy; 2025 Farmer Genius. All rights reserved." data-hi="&copy; 2025 किसान जीनियस। सभी अधिकार सुरक्षित।">&copy; 2025 Farmer Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-robot"></i>
+                <span data-en="Farm AI Assistant" data-hi="फार्म AI सहायक">Farm AI Assistant</span>
+            </div>
+            <button class="chat-close" onclick="toggleChatWidget()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p data-en="Hello! I'm your AI farming assistant. Ask me about settings, features, or any farming questions!" data-hi="नमस्ते! मैं आपका AI कृषि सहायक हूं। मुझसे सेटिंग्स, फीचर्स या कोई भी कृषि प्रश्न पूछें!">Hello! I'm your AI farming assistant. Ask me about settings, features, or any farming questions!</p>
+                    <div class="quick-questions">
+                        <button class="quick-btn" onclick="askQuickQuestion('How to enable dark mode?')" data-en="How to enable dark mode?" data-hi="डार्क मोड कैसे सक्षम करें?">How to enable dark mode?</button>
+                        <button class="quick-btn" onclick="askQuickQuestion('Change language to Hindi?')" data-en="Change language to Hindi?" data-hi="भाषा हिंदी में बदलें?">Change language to Hindi?</button>
+                        <button class="quick-btn" onclick="askQuickQuestion('Notification settings?')" data-en="Notification settings?" data-hi="अधिसूचना सेटिंग्स?">Notification settings?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Ask about settings..." maxlength="200" data-en-placeholder="Ask about settings..." data-hi-placeholder="सेटिंग्स के बारे में पूछें...">
+            <button class="chat-send" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <div id="chat-button" class="chat-floating-btn" onclick="toggleChatWidget()">
+        <i class="fas fa-comments"></i>
+        <div class="chat-notification" data-en="Ask AI" data-hi="AI पूछें">Ask AI</div>
+        <div class="chat-pulse"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
