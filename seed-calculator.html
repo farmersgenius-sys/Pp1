@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seed Calculator — Farmer Genius</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="/index.html" class="nav-link">Home</a>
+    <a href="/tools.html" class="nav-link">Tools</a>
+  </nav>
+
+  <main class="container">
+    <section class="tool-card" id="seed-calculator-card">
+      <h2>Seed Calculator</h2>
+      <p>Calculate the amount of seed required based on crop, seed type and area.</p>
+
+      <div class="form-row">
+        <label for="crop-select">Crop</label>
+        <select id="crop-select">
+          <option value="wheat">Wheat</option>
+          <option value="rice">Rice</option>
+          <option value="maize">Maize</option>
+          <option value="soybean">Soybean</option>
+          <option value="pulses">Pulses</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="seed-type">Seed type</label>
+        <select id="seed-type">
+          <option value="opv">OPV / Local</option>
+          <option value="hybrid">Hybrid</option>
+          <option value="certified">Certified / Treated</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="area">Area</label>
+        <input type="number" id="area" placeholder="Enter area" min="0" step="any" />
+        <select id="area-unit">
+          <option value="ha">hectares (ha)</option>
+          <option value="acre">acres</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <button id="calculate-btn" class="btn primary">Calculate</button>
+        <button id="clear-btn" class="btn secondary">Clear</button>
+      </div>
+
+      <div id="result" class="result-box" aria-live="polite"></div>
+      <div id="seed-note" class="muted small"></div>
+    </section>
+  </main>
+
+  <script src="/seed-calculator.js"></script>
+</body>
+</html>
